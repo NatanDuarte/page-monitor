@@ -99,7 +99,7 @@ func logMonitorament(page string, status bool) {
 	if err != nil {
 		fmt.Println("at func logMonitorament(), error:", err)
 	}
-	file.WriteString(time.Now().Format("15/01/2006 15:04:05") + " - " + page + " - online: " + strconv.FormatBool(status) + "\n")
+	file.WriteString(time.Now().Format("02/01/2006 15:04:05") + " - " + page + " - online: " + strconv.FormatBool(status) + "\n")
 	file.Close()
 }
 
